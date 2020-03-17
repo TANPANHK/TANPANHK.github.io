@@ -1,18 +1,223 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>P5js</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+            integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
     </head>
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
-    <script src="./sketch.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
-
-    
-
     <body>
-       
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="flex-row">
+                        <div class="header-top-left">
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                cs@jfanclub.com&nbsp; &nbsp; &nbsp; &nbsp;
+                                (852)51380148&nbsp; &nbsp; &nbsp;
+                                &nbsp;香港旺角信和中心1403A
+                            </p>
+                        </div>
+                        <div class="header-top-right">
+                            <div class="flex-row">
+                                <a href="https://facebook.com/"
+                                    ><i class="fab fa-facebook-f"></i></a
+                                ><a href="https://twitter.com/"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="flex-row">
+                        <div class="header-bottom-left">
+                            <img src="logo.gif" alt="" />
+                        </div>
+                        <div class="header-bottom-right">
+                            <ul>
+                                <li>HOME</li>
+                                <li>ABOUT</li>
+                                <li>LOGIN</li>
+                            </ul>
+                        </div>
+
+                        <div class="header-bottom-right-icon">
+                            <i class="fas fa-bars" id="sidebarbutton"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="sidebar">
+                <h5>Sidebar</h5>
+            </div>
+            <div class="container">
+                <div class="form">
+                    <form action="">
+                        <div class="flex-row">
+                            <div class="form-item">
+                                <div class="form-line">
+                                    <span>代購類型:</span>
+                                    <select name="" id="">
+                                        <option value="">代購</option>
+                                        <option value="">代拍</option>
+                                    </select>
+                                </div>
+                                <div class="form-line">
+                                    <span>代購網址:</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>貨品名稱:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>數量:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>款色,型號,尺碼,etc.</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>單價:</span>
+                                    <input type="text" />
+                                </div>
+                                <i class="fas fa-trash"></i>
+                            </div>
+
+                            <div class="form-item">
+                                <div class="form-line">
+                                    <span>代購類型:</span>
+                                    <select name="" id="">
+                                        <option value="">代購</option>
+                                        <option value="">代拍</option>
+                                    </select>
+                                </div>
+                                <div class="form-line">
+                                    <span>代購網址:</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>貨品名稱:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>數量:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>款色,型號,尺碼,etc.</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>單價:</span>
+                                    <input type="text" />
+                                </div>
+                            </div>
+
+                            <div class="form-item">
+                                <div class="form-line">
+                                    <span>代購類型:</span>
+                                    <select name="" id="">
+                                        <option value="">代購</option>
+                                        <option value="">代拍</option>
+                                    </select>
+                                </div>
+                                <div class="form-line">
+                                    <span>代購網址:</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>貨品名稱:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>數量:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>款色,型號,尺碼,etc.</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>單價:</span>
+                                    <input type="text" />
+                                </div>
+                            </div>
+
+                            <div class="form-item">
+                                <div class="form-line">
+                                    <span>代購類型:</span>
+                                    <select name="" id="">
+                                        <option value="">代購</option>
+                                        <option value="">代拍</option>
+                                    </select>
+                                </div>
+                                <div class="form-line">
+                                    <span>代購網址:</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>貨品名稱:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>數量:</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form-line">
+                                    <span>款色,型號,尺碼,etc.</span>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="form-line">
+                                    <span>單價:</span>
+                                    <input type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <script defer>
+            let sidebarState = 0;
+            let sb = document.querySelector('.sidebar');
+            let sidebarbutton = document.querySelector('#sidebarbutton');
+
+            sidebarbutton.addEventListener('click', () => {
+                if (sidebarState == 0) {
+                    console.log('Click');
+                    sb.style.opacity = 1;
+                    sidebarState = 1;
+                } else {
+                    console.log('Click');
+                    sb.style.opacity = 0;
+                    sidebarState = 0;
+                }
+            });
+        </script>
     </body>
-
-
-</HTML>
+</html>
